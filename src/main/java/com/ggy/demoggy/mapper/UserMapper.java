@@ -1,4 +1,4 @@
-package com.ggy.demoggy.dao;
+package com.ggy.demoggy.mapper;
 
 import com.ggy.demoggy.bean.UserBean;
 

@@ -21,7 +21,7 @@ class DemoggyApplicationTests {
     public void contextLoads() {
         UserBean userBean = userService.loginIn("asd","123");
         out.println("该用户ID为：");
-        out.println(userBean.getId());
+//        out.println(userBean.getId());
     }
 
 }

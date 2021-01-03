@@ -1,7 +1,7 @@
 package com.ggy.demoggy.service.Impl;
 
 import com.ggy.demoggy.bean.UserBean;
-import com.ggy.demoggy.dao.UserMapper;
+import com.ggy.demoggy.mapper.UserMapper;
 import com.ggy.demoggy.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
