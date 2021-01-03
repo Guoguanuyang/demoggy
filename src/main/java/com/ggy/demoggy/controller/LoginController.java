@@ -4,8 +4,10 @@ import com.ggy.demoggy.bean.UserBean;
 import com.ggy.demoggy.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 
@@ -28,5 +30,11 @@ public class LoginController {
         } else {
             return "error";
         }
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/getUser/{id}")
+    public String GetUser(@PathVariable int id){
+        return userService.sel(id).toString();
     }
 }

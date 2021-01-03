@@ -6,4 +6,5 @@ public interface UserService {
 
     UserBean loginIn(String name, String password);
 
+    UserBean sel(int id);
 }
